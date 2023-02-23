@@ -1,8 +1,8 @@
-# Install script for directory: /home/dulanjana/SLRC-2023/catkin_ws/src/slrc_robot
+# Install script for directory: /home/dulanjana/slrc_2023/catkin_ws/src/slrc_robot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dulanjana/SLRC-2023/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dulanjana/slrc_2023/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dulanjana/SLRC-2023/catkin_ws/build/slrc_robot/catkin_generated/installspace/slrc_robot.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dulanjana/slrc_2023/catkin_ws/build/slrc_robot/catkin_generated/installspace/slrc_robot.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slrc_robot/cmake" TYPE FILE FILES
-    "/home/dulanjana/SLRC-2023/catkin_ws/build/slrc_robot/catkin_generated/installspace/slrc_robotConfig.cmake"
-    "/home/dulanjana/SLRC-2023/catkin_ws/build/slrc_robot/catkin_generated/installspace/slrc_robotConfig-version.cmake"
+    "/home/dulanjana/slrc_2023/catkin_ws/build/slrc_robot/catkin_generated/installspace/slrc_robotConfig.cmake"
+    "/home/dulanjana/slrc_2023/catkin_ws/build/slrc_robot/catkin_generated/installspace/slrc_robotConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slrc_robot" TYPE FILE FILES "/home/dulanjana/SLRC-2023/catkin_ws/src/slrc_robot/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slrc_robot" TYPE FILE FILES "/home/dulanjana/slrc_2023/catkin_ws/src/slrc_robot/package.xml")
 endif()
 

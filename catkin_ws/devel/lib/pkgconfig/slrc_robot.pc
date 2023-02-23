@@ -1,4 +1,4 @@
-prefix=/home/dulanjana/SLRC-2023/catkin_ws/devel
+prefix=/home/dulanjana/slrc_2023/catkin_ws/devel
 
 Name: slrc_robot
 Description: Description of slrc_robot

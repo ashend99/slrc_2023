@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "sensor_nodes"
-PROJECT_SPACE_DIR = "/home/dulanjana/SLRC-2023/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/dulanjana/slrc_2023/catkin_ws/devel"
 PROJECT_VERSION = "0.0.0"

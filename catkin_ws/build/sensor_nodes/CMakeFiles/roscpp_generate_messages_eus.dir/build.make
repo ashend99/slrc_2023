@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dulanjana/SLRC-2023/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/dulanjana/slrc_2023/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dulanjana/SLRC-2023/catkin_ws/build
+CMAKE_BINARY_DIR = /home/dulanjana/slrc_2023/catkin_ws/build
 
 # Utility rule file for roscpp_generate_messages_eus.
 
@@ -63,10 +63,10 @@ sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/build: roscpp_generate_
 .PHONY : sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/build
 
 sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	cd /home/dulanjana/SLRC-2023/catkin_ws/build/sensor_nodes && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/depend:
-	cd /home/dulanjana/SLRC-2023/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dulanjana/SLRC-2023/catkin_ws/src /home/dulanjana/SLRC-2023/catkin_ws/src/sensor_nodes /home/dulanjana/SLRC-2023/catkin_ws/build /home/dulanjana/SLRC-2023/catkin_ws/build/sensor_nodes /home/dulanjana/SLRC-2023/catkin_ws/build/sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dulanjana/slrc_2023/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dulanjana/slrc_2023/catkin_ws/src /home/dulanjana/slrc_2023/catkin_ws/src/sensor_nodes /home/dulanjana/slrc_2023/catkin_ws/build /home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes /home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor_nodes/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 

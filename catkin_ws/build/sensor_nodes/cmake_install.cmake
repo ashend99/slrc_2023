@@ -1,8 +1,8 @@
-# Install script for directory: /home/dulanjana/SLRC-2023/catkin_ws/src/sensor_nodes
+# Install script for directory: /home/dulanjana/slrc_2023/catkin_ws/src/sensor_nodes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dulanjana/SLRC-2023/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dulanjana/slrc_2023/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dulanjana/SLRC-2023/catkin_ws/build/sensor_nodes/catkin_generated/installspace/sensor_nodes.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes/catkin_generated/installspace/sensor_nodes.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_nodes/cmake" TYPE FILE FILES
-    "/home/dulanjana/SLRC-2023/catkin_ws/build/sensor_nodes/catkin_generated/installspace/sensor_nodesConfig.cmake"
-    "/home/dulanjana/SLRC-2023/catkin_ws/build/sensor_nodes/catkin_generated/installspace/sensor_nodesConfig-version.cmake"
+    "/home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes/catkin_generated/installspace/sensor_nodesConfig.cmake"
+    "/home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes/catkin_generated/installspace/sensor_nodesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_nodes" TYPE FILE FILES "/home/dulanjana/SLRC-2023/catkin_ws/src/sensor_nodes/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_nodes" TYPE FILE FILES "/home/dulanjana/slrc_2023/catkin_ws/src/sensor_nodes/package.xml")
 endif()
 

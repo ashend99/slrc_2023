@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!--<include>
+      <uri>model://sun</uri>
+    </include>-->
+
+    <model name="shelves">
+      <pose>0 0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://arena.STL</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+    </physics>
+    
+    <gravity>
+      0.0 0.0 0.0
+    </gravity>
+
+    <gui fullscreen='0'>
+    </gui>
+
+  </world>
+</sdf>
