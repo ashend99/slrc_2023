@@ -31,34 +31,24 @@ class ultrasonic():
         self.distance_calculate()
     
     def distance_calculate(self):
-        # while not rospy.is_shutdown():
-        #     try:
+        while not rospy.is_shutdown():
+            GPIO.output(self.trigPin, GPIO.HIGH)
+            time.sleep(0.00001)
+            GPIO.output(self.trigPin, GPIO.LOW)
 
-        GPIO.output(self.trigPin, GPIO.HIGH)
+            while GPIO.input(self.echoPin)==0:
+                pulse_start_time = time.time()
+            while GPIO.input(self.echoPin)==1:
+                pulse_end_time = time.time()
 
-        time.sleep(0.00001)
-
-        GPIO.output(self.trigPin, GPIO.LOW)
-
-        while GPIO.input(self.echoPin)==0:
-            pulse_start_time = time.time()
-        while GPIO.input(self.echoPin)==1:
-            pulse_end_time = time.time()
-
-        pulse_duration = pulse_end_time - pulse_start_time
-        self.distance.data = round(pulse_duration * 17150, 2)
-        print("Distance:",self.distance.data,"cm")
-    
-    ### publish the distance ###
-        self.ultrasonic_pub.publish(self.distance)
-            
-            # except rospy.ROSInterruptException :
-            #     pass
-            # self.rate.sleep()
+            pulse_duration = pulse_end_time - pulse_start_time
+            self.distance.data = round(pulse_duration * 17150, 2)
+            print("Distance:",self.distance.data,"cm")
+        
+            ### publish the distance ###
+            self.ultrasonic_pub.publish(self.distance)
+                
+            self.rate.sleep()
 
 if __name__ == "__main__":
     us = ultrasonic(18, 24, 1)
-    
-    while not rospy.is_shutdown():
-        us.distance_calculate()
-        us.rate.sleep()
