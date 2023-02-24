@@ -13,7 +13,7 @@ class ultrasonic():
         self.echoPin = echo
         self.index = index
 
-        self.distance = Int16
+        self.distance = Int16()
         self.publish_rate = 10
 
         GPIO.setup(self.trigPin, GPIO.OUT)
@@ -27,32 +27,34 @@ class ultrasonic():
 
         GPIO.output(self.trigPin, GPIO.LOW)
         print("Waiting for sensor to settle")
-        self.distance = 0
+
         self.distance_calculate()
     
     def distance_calculate(self):
         while not rospy.is_shutdown():
+            try:
 
-            GPIO.output(self.trigPin, GPIO.HIGH)
+                GPIO.output(self.trigPin, GPIO.HIGH)
 
-            time.sleep(0.00001)
+                time.sleep(0.00001)
 
-            GPIO.output(self.trigPin, GPIO.LOW)
+                GPIO.output(self.trigPin, GPIO.LOW)
 
-            while GPIO.input(self.echoPin)==0:
+                while GPIO.input(self.echoPin)==0:
                     pulse_start_time = time.time()
-            while GPIO.input(self.echoPin)==1:
+                while GPIO.input(self.echoPin)==1:
                     pulse_end_time = time.time()
 
-            pulse_duration = pulse_end_time - pulse_start_time
-            self.distance.data = round(pulse_duration * 17150, 2)
-            print("Distance:",self.distance.data,"cm")
+                pulse_duration = pulse_end_time - pulse_start_time
+                self.distance.data = round(pulse_duration * 17150, 2)
+                print("Distance:",self.distance.data,"cm")
             
             ### publish the distance ###
-            self.ultrasonic_pub.publish(self.distance)
-
+                self.ultrasonic_pub.publish(self.distance)
+            
+            except rospy.ROSInterruptException :
+                pass
             self.rate.sleep()
-    
 
 if __name__ == "__main__":
     us = ultrasonic(18, 24, 1)

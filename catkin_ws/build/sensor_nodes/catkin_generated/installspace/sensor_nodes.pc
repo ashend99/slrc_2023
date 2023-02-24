@@ -1,4 +1,4 @@
-prefix=/home/dulanjana/slrc_2023/catkin_ws/install
+prefix=/home/pi/slrc_2023/catkin_ws/install
 
 Name: sensor_nodes
 Description: Description of sensor_nodes

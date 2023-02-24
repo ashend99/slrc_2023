@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dulanjana/slrc_2023/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/pi/slrc_2023/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dulanjana/slrc_2023/catkin_ws/build
+CMAKE_BINARY_DIR = /home/pi/slrc_2023/catkin_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build: rosgraph
 .PHONY : sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 
 sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	cd /home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/pi/slrc_2023/catkin_ws/build/sensor_nodes && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend:
-	cd /home/dulanjana/slrc_2023/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dulanjana/slrc_2023/catkin_ws/src /home/dulanjana/slrc_2023/catkin_ws/src/sensor_nodes /home/dulanjana/slrc_2023/catkin_ws/build /home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes /home/dulanjana/slrc_2023/catkin_ws/build/sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/slrc_2023/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/slrc_2023/catkin_ws/src /home/pi/slrc_2023/catkin_ws/src/sensor_nodes /home/pi/slrc_2023/catkin_ws/build /home/pi/slrc_2023/catkin_ws/build/sensor_nodes /home/pi/slrc_2023/catkin_ws/build/sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor_nodes/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 

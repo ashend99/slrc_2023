@@ -1,2 +1,2 @@
 sensor_nodes:slrc_robot
--DCATKIN_DEVEL_PREFIX=/home/dulanjana/slrc_2023/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dulanjana/slrc_2023/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/pi/slrc_2023/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pi/slrc_2023/catkin_ws/install -G Unix Makefiles
